@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="lib/boostrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="shortcut icon icon" type="image/x-icon" href="basketballicon.png" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <!--navbar to navigate from page to page-->
+                <nav>
+                    <a asp-controller="SubView" asp-action="Index">Home</a>
+                    <a asp-controller="SubView" asp-action="GradeCalculator">Grade Calculator</a>
+                </nav>
+            </div>
+            <div class="col-5 center-container">
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+        @RenderBody()
+    </div>
+
+
+    <script src="lib/boostrap/js/bootstrap.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/grade.js"></script>
+</body>
+</html>
